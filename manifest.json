@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Transcript Summarizer",
+  "version": "1.0",
+  "description": "Show transcripts and summarize YouTube videos using ChatGPT, Gemini, or Claude.",
+  "permissions": ["storage", "scripting", "tabs", "activeTab"],
+  "host_permissions": ["*://www.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "css": ["sidebar.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}

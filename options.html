@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div>
+      <h2>AI Summarizer Settings</h2>
+      <label>Choose Platform:</label>
+      <select id="platform">
+        <option>ChatGPT</option>
+        <option>Gemini</option>
+        <option>Claude</option></select
+      ><br /><br />
+
+      <label>Custom Prompt:</label><br />
+      <textarea id="prompt" rows="4" cols="50">
+Summarize this YouTube video:</textarea
+      ><br /><br />
+
+      <button id="save">Save</button>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
