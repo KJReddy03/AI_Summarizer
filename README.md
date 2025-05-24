@@ -1,7 +1,7 @@
 # AI_Summarizer
 A Chrome extension that enhances YouTube video pages by showing the video transcript in a movable sidebar and allowing you to quickly summarize the transcript using popular AI platforms like ChatGPT, Gemini, or Claude.
 
-Features
+# Features
 ->Transcript Sidebar: Displays the YouTube video's transcript (if available) in a draggable sidebar on the right side of the page.
 
 ->Summarize Button: Adds a "Summarize" button below the video player. When clicked, it fetches the transcript and copies a prompt to your clipboard ready for AI summarization.
@@ -16,7 +16,7 @@ Features
 
 ->Sidebar Controls: The sidebar includes buttons to copy transcript, open settings, close sidebar, and move the sidebar around the screen.
 
-How It Works
+# How It Works
 1.Injection on YouTube Video Pages:
 The extension injects a sidebar and summarize button only when a YouTube video page (URL contains watch?v=) is loaded.
 
@@ -37,7 +37,7 @@ When you click the "Summarize" button, the extension:
 4.URL Change Handling:
 When you navigate to another video or leave a video page, the extension removes the sidebar and summarize button to keep the UI clean. It reinjects these elements only if you are on a video page.
 
-Usage
+# Usage
 1.Install the extension in Chrome (load unpacked in developer mode or package and publish).
 
 2.Open any YouTube video.
@@ -58,7 +58,7 @@ Click the ⚙️ button in the sidebar or open the extension's options page to s
 7.Close or move sidebar:
 Use the ✖️ button to close the sidebar, and drag the header to reposition it.
 
-Notes
+# Notes
 ->The extension requires transcript availability on YouTube. If transcripts are not enabled or present, it will notify you.
 
 ->The extension only injects UI elements on YouTube video pages (watch?v= URLs).
@@ -67,7 +67,7 @@ Notes
 
 ->The extension cleans up UI elements when navigating away from video pages to avoid clutter.
 
-Troubleshooting
+# Troubleshooting
 ->If the sidebar or summarize button does not appear, make sure you are on a valid YouTube video page.
 
 ->If you navigate quickly between videos and see duplicated buttons, reload the page to reset.
@@ -76,5 +76,5 @@ Troubleshooting
 
 ->Check the console (Ctrl+Shift+J) for any errors related to extension execution.
 
-License
+# License
 This project is open-source and free to use and modify.
